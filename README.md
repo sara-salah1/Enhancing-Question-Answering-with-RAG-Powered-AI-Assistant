@@ -29,5 +29,5 @@ This project focuses on developing an AI-powered Question Answering (QA) assista
  
   
 
-![image](https://github.com/user-attachments/assets/c6e1bbc7-69bf-4ba5-a0fb-e1cca9488afd)
+![image](https://github.com/user-attachments/assets/885a44c3-9551-4bd0-a4c3-442746f96781)
 
