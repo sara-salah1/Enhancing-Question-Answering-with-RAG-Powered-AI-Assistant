@@ -10,10 +10,15 @@ This project focuses on developing an AI-powered Question Answering (QA) assista
 
 ## Installation and Setup
 1. Clone the Repository:
-
+   ```bash
+   git clone https://github.com/sara-salah1/Enhancing-Question-Answering-with-RAG-Powered-AI-Assistant.git
 2. Install Dependencies
-3. Download the SANAD Dataset: Download the dataset from Kaggle SANAD Dataset and place it in the data/ directory.
-4. run app.py
+     ```bash
+   pip install -r requirements.txt
+4. Download the SANAD Dataset: Download the dataset from Kaggle SANAD Dataset and place it in the data/ directory.
+5. run app.py
+    ```bash
+   python app.py
 
 
 ## Usage
