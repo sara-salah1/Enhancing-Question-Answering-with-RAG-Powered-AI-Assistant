@@ -19,6 +19,7 @@ This project focuses on developing an AI-powered Question Answering (QA) assista
 5. run app.py
     ```bash
    python app.py
+![image](https://github.com/user-attachments/assets/c6e1bbc7-69bf-4ba5-a0fb-e1cca9488afd)
 
 
 ## Usage
