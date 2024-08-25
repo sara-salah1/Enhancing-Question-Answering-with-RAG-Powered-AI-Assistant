@@ -8,6 +8,8 @@ base_dir = 'data'
 data_loader = DataLoader(base_dir)
 data = data_loader.load_data()
 documents = [Document(page_content=text["content"]) for text in data[:166]]
+
+# enter your API
 google_api_key = ""
 rag_chain = RAGChain(documents, google_api_key)
 
