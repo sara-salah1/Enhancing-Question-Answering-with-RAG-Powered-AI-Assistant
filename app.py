@@ -11,7 +11,7 @@ print(len(data))
 documents = [Document(page_content=text["content"]) for text in data]
 print(len(documents))
 print(documents[0])
-google_api_key = "AIzaSyAe8x5EZLyLG6IhTo85hp10558Fh22xv1k"
+google_api_key = ""
 rag_chain = RAGChain(documents, google_api_key)
 
 
