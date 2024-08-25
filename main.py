@@ -20,7 +20,8 @@ if __name__ == "__main__":
     documents = [Document(page_content=text["content"]) for text in samples]
     print(documents[0])
 
-    google_api_key = "AIzaSyAe8x5EZLyLG6IhTo85hp10558Fh22xv1k"
+    # enter your API
+    google_api_key = ""
     rag_chain = RAGChain(documents, google_api_key)
 
     evaluation_data = [
