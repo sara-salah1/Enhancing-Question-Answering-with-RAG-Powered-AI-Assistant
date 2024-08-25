@@ -13,7 +13,10 @@ class Evaluator:
         return similarity
 
     def evaluate(self, evaluation_data, rag_chain):
+        print('Enter Evaluate')
+        print("evaluation_data: ", evaluation_data)
         generated_answers = [rag_chain.generate_answer(item["question"]) for item in evaluation_data]
+        print('generated: ', generated_answers)
         correct_count = 0
         for item, generated_answer in zip(evaluation_data, generated_answers):
             similarity = self.compute_similarity(item["correct_answer"], generated_answer)

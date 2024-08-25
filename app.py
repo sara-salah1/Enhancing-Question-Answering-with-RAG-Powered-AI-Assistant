@@ -7,10 +7,7 @@ app = Flask(__name__)
 base_dir = 'data'
 data_loader = DataLoader(base_dir)
 data = data_loader.load_data()
-print(len(data))
-documents = [Document(page_content=text["content"]) for text in data]
-print(len(documents))
-print(documents[0])
+documents = [Document(page_content=text["content"]) for text in data[:166]]
 google_api_key = ""
 rag_chain = RAGChain(documents, google_api_key)
 

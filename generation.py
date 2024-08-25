@@ -9,7 +9,9 @@ from embedding import EmbeddingModel
 
 class RAGChain:
     def __init__(self, documents, google_api_key):
+        print("Enter RAG chain")
         self.vector_database = Chroma.from_documents(documents=documents, embedding=EmbeddingModel())
+        print("vector database: ", self.vector_database)
         self.retriever = self.vector_database.as_retriever(search_type="similarity", search_kwargs={'k': 3})
         self.template = """
         You are an AI-powered QA Assistant designed your role is to provide precise and contextually 
@@ -47,4 +49,7 @@ class RAGChain:
         return "\n\n".join(doc.page_content for doc in docs)
 
     def generate_answer(self, question):
-        return self.rag_chain.invoke(question)
+        print("question: ", question)
+        res = self.rag_chain.invoke(question)
+        print("result: ", res)
+        return res
